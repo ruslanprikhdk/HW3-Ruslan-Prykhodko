@@ -1,17 +1,42 @@
-body {
-  width: 1060px;
+﻿body {
+background-color: #f9f9f9;
+}
+.background {
+margin-top: 0px;
+margin-left: 150px; 
+width: 1060px;
+height: 100%;
+background-color: white;
+border-left: 3px solid #b3b3b3; 
+border-right: 3px solid #b3b3b3;
 }
 h1,
 ul,
 p,
-td {
+li
+{
 font-family: Arial;
 }
+.upper_menu {
+text-decoration: none;
+color: white;
+}
+.main_menu {
+text-decoration: none;
+color: grey;
+}
+.lower_menu {
+text-decoration: none;
+color: grey;
+}
+.header {
+padding-top:50px;
+} 
 h1 {
 font-weight:bold;
-margin-top: 50px;
 margin-left: 50px;
 font-size: 35px;
+background-color: white;
 }
 .items {
 margin-left: 50px;
@@ -48,13 +73,17 @@ margin-top: 40px;
 margin-left: 50px;
 font-size: 15px;
 }
-.offer td {
+.offer li {
 color:black;
 padding: 10px;
-border: 1px solid grey;
-}
-td {
+border-left: 1px solid grey;
+border-top: 1px solid grey;
+border-right: 1px solid grey;
+list-style-type: none;
 width: 240px;
+}
+.offer li:last-child {
+border-bottom: 1px solid grey;
 }
 img {
 width: 675px;
@@ -111,22 +140,25 @@ padding: 8px 0px 8px 390px;
 text-align: right;
 }
 .menu li:hover {
-background-color: black;
+background-color: #383838;
 border: 1px solid white;
-padding: 8.5px 20px 9px 20px;
+padding: 9px 19px 9px 19px;
 }
 .menu li:nth-child(1):hover {
-background-color: black;
+background-color: #383838;
 border: 1px solid white;
-padding: 8.5px 40px 9px 20px;
+padding: 9px 39px 9px 19px;
 }
 
-.offer td:hover {
+.offer li:hover {
+width: 235px;
 background-color: gainsboro;
-border: 1px solid black;
+border-top: 1px solid black;
+border-left: 1px solid black;
+border-right: 1px solid black;
 color: black;
 padding-left: 15px;
 }
-.footer li:hover {
+.footer .lower_menu:hover {
 text-decoration: underline;
 }
